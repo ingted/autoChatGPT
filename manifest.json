@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "autoChatGPT",
+    "version": "3.0",
+    "description": "rua~",
+    "permissions": ["<all_urls>"],
+    "content_scripts": [
+        {
+            "matches": ["*://chat.openai.com/*"],
+            "js": ["in_browser.js"]
+        }
+    ]
+}
